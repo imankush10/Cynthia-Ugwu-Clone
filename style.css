@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'General Sans', sans-serif;
+    font-size: 66.7%;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+.cursor-circle {
+    display: none;
+    background-color: #fff;
+    height: 11px;
+    width: 11px;
+    position: fixed;
+    z-index: 999;
+    pointer-events: none;
+    border-radius: 50%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.8s;
+}
+main{
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+}
+
+/* Page 1 */
+.page1 {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    color: white;
+    position: relative;
+}
+/* Navigation Bar */
+.nav {
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 4rem;
+    font-size: 2.5rem;
+    display: flex;
+    width: 100%;
+    background-color: black;
+    top: 0%;
+    left: 0%;
+}
+.nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+.nav h5 {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+/* Page 1 Content */
+.bounding {
+    width: fit-content;
+    overflow: hidden;
+}
+.bounding .bounding-elem {
+    transform: translateY(100%);
+}
+.bounding .bounding-elem2 {
+    transform: translateY(-250%);
+}
+.page1-heading {
+    margin-top: 7rem;
+    line-height: 0.85;
+    padding: 1rem 4rem;
+}
+.page1-heading h1 {
+    font-size: 11vw;
+    text-transform: uppercase;
+    font-weight: 500;
+    opacity: 0.6;
+}
+.page1-sub {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+#page1-sub-h1 {
+    padding-left: 16rem;
+}
+.page1-sub h5{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 1.5rem;
+}
+.aside-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-top: 5rem;
+}
+.aside-heading h4 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: right;
+    margin: 1.3rem 0;
+}
+.page1-footer {
+    width: 103%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    padding: 0 5rem;
+    position: absolute;
+    bottom: 2%;
+}
+.page1-footer h4{
+    font-weight: 500;
+    /* background-color: red; */
+}
+.page1-footer-icons {
+    display: flex;
+    gap:0.4rem
+}
+.page1-footer-icons .circle {
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 50%;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: black;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+}
+
+.page2 {
+    height: 100vh;
+    width: 100%;
+    position:relative;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.boxes {
+    padding: 0 4rem;
+    width: 90%;
+}
+.box {
+    border-top: solid #888 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 0;
+    position: relative;
+}
+.box h1 {
+    font-weight: 500;
+    font-size: 8vw;
+    opacity: 0.7;
+}
+.box h5 {
+    font-size: 0.9vw;
+    font-weight: 500;
+    opacity: 0.7;
+}
+.box-3 {
+    border-bottom: 1px solid #888;
+}
+
+.box img {
+    position: absolute;
+    z-index: 9;
+    height: 135%;
+    /* display: none; */
+    transform-origin: center;
+    opacity: 0;
+    pointer-events: none;
+}
+.page3 {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    position: relative;
+}
+.mid3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    width: 85%;
+    height: 70%;
+    margin-left: 28rem;
+    /* background-color: red; */
+}
+.mid3 img {
+    height: 15vw;
+}
+.text{
+    width: 35%;
+}
+.text h6 {
+    font-weight: 500;
+    opacity: 0.6;
+    font-size: 0.8vw;
+}
+.text h5 {
+    font-weight: 500;
+    font-size: 1.2vw;
+    line-height: 2rem;
+}
+.text button {
+    background-color: black;
+    color: white;
+    border: none;
+    outline: 1px solid white;
+    border-radius: 17px;
+    padding: 4px 16px;
+    margin-top: 1rem;
+    font-size: 1.1vw;
+    font-weight: 500;
+}
+.bottom3 {
+    font-size: 1.4vw;
+    padding: 0 4rem;
+    margin-top: 5rem;
+}
+.bottom3 h5 {
+    opacity: 0.6;
+    font-weight: 500;
+}
+.bottom3 a {
+    color: white;
+    text-decoration: none;
+    font-weight: 550;
+    font-size: 1.1vw;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+    align-items: center;
+    font-size: 1.8vw;
+}
+.footer h5 {
+    font-weight: 600;
+}
+.links {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    font-size: 1.4vw;
+    text-transform: uppercase;
+}
+@media (max-width:640px) {
+    .cursor-circle {
+        opacity: 0;
+    }
+    .nav {
+        padding: 2.8rem;
+    }
+    .page1-heading {
+        padding: 0 2.6rem;
+        margin-top: 5rem;
+    }
+    .page1-heading h1 {
+        text-align: center;
+        font-size: 17vw;
+    }
+
+    #page1-sub-h1 {
+        padding-left: 0;
+    }
+    .aside-heading {
+        margin-top: 10rem;
+    }
+    .aside-heading h4 {
+        font-size: 1.4rem;
+        margin: 1rem 0;
+    }
+    .page1-footer {
+        font-size: 2.5rem;
+        padding: 0 1.6rem;
+        gap: 6.4rem;
+        bottom: 10%;
+    }
+    .page1-footer h4 {
+        font-size: 1.2rem;
+        margin-left: 1rem;
+    }
+    .page1-footer-icons {
+        display: none;
+    }
+    .boxes {
+        width: 100%;
+    }
+    .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 25vh;
+    }
+    .mid3 {
+        flex-direction: column;
+        gap: 3rem;
+        width:100%;
+        margin-left: 0rem;
+    }
+    .mid3 img {
+        height: 65vw;
+    }
+    .text{
+        width: 85%;
+        padding-bottom: 9rem;
+        /* background-color: red; */
+        border-bottom: 1px solid #888;
+    }
+    .text h6 {
+        font-size: 2.8vw;
+        margin-bottom: 0.8rem;
+    }
+    .text h5 {
+        font-size: 3.7vw;
+        line-height: 2.4rem;
+    }
+    .text button {
+        margin-top: 1rem;
+        font-size: 3.5vw;
+    }
+    .box h1 {
+        font-size: 14vw;
+    }
+    .box h5 {
+        font-size: 1rem;
+    }
+    .bottom3 {
+        font-size: 4vw;
+        margin-top: 9rem;
+    }
+    .bottom3 a {
+        font-size: 4vw;
+    }
+    .links h5 {
+        font-size: 1.9vw;
+    }
+    .footer {
+        font-size: 5vw;
+    }
+
+}
